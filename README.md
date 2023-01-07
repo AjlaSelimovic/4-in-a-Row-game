@@ -27,7 +27,6 @@ Ruby has features that are similar to those of Smalltalk, Perl, and Python. Perl
 
 **Features of Rubby** :
 
-Ruby is an open-source and is freely available on the Web, but it is subject to a license.
 
 Ruby is a general-purpose, interpreted programming language.
 
