@@ -13,11 +13,26 @@
 This project was implemented in Ruby programming language, for purposes of IT 305 Programming Languages course at International Burch University.
 
 Team members: 
-Dženeta Džananović
+[Dženeta Džananović](https://github.com/dzenetadz)
 
-Amina Kodžaga
+[Amina Kodžaga](https://github.com/aminakodzaga)
 
-Ajla Selimović 
+[Ajla Selimović](https://github.com/AjlaSelimovic)
+
+
+#This implementation has a `FourInARow` class with a constructor that initializes the board with the specified number of rows
+ and columns and sets the current player to `:red`. The `play` method runs a loop where each iteration represents a turn for the
+ current player. The player is prompted to enter a column number, and the `drop_piece` method is called to place the piece at the bottom of the
+ chosen column. The `check_win` method is then called to check if
+ the current player has won the game by getting four pieces in a row horizontally, vertically, or diagonally.
+ If a win is detected, the loop is broken and the current player is declared the winner.
+ If all cells on the board are filled and no win is detected, the game is declared a tie and the loop is broken.
+
+There is a new instance variable called @moves which is a hash that stores the history of moves for each player. 
+The key of the hash is the player's color (either :red or :yellow) and the value is an array of column numbers representing the moves made by that player.
+For example, if the red player makes the first move in column 3 and the yellow player makes the second move in column 4, 
+the @moves hash will be { red: [3], yellow: [4] }. If the red player then makes the third move in column 2, the @moves hash will be { red: [3, 2], yellow: [4] }.
+At the end of the game, the @moves hash is printed to the console along with the list of moves made by each player.
 
 
 # About Ruby
@@ -56,3 +71,6 @@ Ruby has a rich set of built-in functions, which can be used directly into Ruby 
 
 
 # How to run
+To run the project, you will first need to install Ruby. You can find detailed instructions [on this link](https://rubyinstaller.org/downloads/).
+
+Instructions to run: in a terminal window at the folder of the project type:  ruby 4game.rb
